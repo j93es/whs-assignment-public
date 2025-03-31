@@ -5,6 +5,9 @@
 *.db
 
 ### C ###
+# Compiled source #
+a.out
+
 # Prerequisites
 *.d
 
