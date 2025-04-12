@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,c,python,flask,lua,vs
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,c,python,flask,lua,vs
 
+software-vulnerability/
+
+reverse-engineering/
 
 *.db
 
