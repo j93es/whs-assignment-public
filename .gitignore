@@ -1,10 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,c,python,flask,lua,vs
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,c,python,flask,lua,vs
 
-file-system/
-reverse-engineering/
-incident-response/
 information-security-policy/
+reverse-engineering/
+file-system/
+incident-response/
 
 *.db
 
