@@ -5,6 +5,7 @@ information-security-policy/
 reverse-engineering/
 file-system/
 incident-response/
+osint/src/analyzer.py
 
 *.db
 
