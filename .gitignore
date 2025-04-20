@@ -6,6 +6,7 @@ reverse-engineering/
 file-system/
 incident-response/
 osint/src/analyzer.py
+osint/*.pdf
 
 *.db
 
