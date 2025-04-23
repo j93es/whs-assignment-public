@@ -2,11 +2,12 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,c,python,flask,lua,vs
 
 information-security-policy/
-reverse-engineering/
-file-system/
-incident-response/
+window-reverse-engineering/
 osint/src/analyzer.py
 osint/*.pdf
+system-hacking-advanced/
+file-system/
+incident-response/
 
 *.db
 

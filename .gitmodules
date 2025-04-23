@@ -1,3 +1,6 @@
+[submodule "secure-coding/whs-secure-coding"]
+	path = secure-coding/whs-secure-coding
+	url = https://github.com/j93es/whs-secure-coding
 [submodule "docker-basic/kr-vulhub"]
 	path = docker-basic/kr-vulhub
 	url = https://github.com/j93es/kr-vulhub.git
