@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: express-app-private
+spec:
+  containers:
+    - name: express-app-private
+      image: j93es/19_minsukjung
+      ports:
+        - containerPort: 3000
+  imagePullSecrets:
+    - name: my-dockerhub-secret
