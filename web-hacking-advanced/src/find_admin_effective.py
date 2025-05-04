@@ -15,12 +15,12 @@ while True:
         response = requests.get(url, params=params)
         sleep(0.5)
         if "No products found." in response.text:
-            print(0, end="")
+            # print(0, end="")
             tmp += "0"
         else:
-            print(1, end="")
+            # print(1, end="")
             tmp += "1"
-    print()
+    # print()
     result = chr(int(tmp, 2))
     print(result)
     n += 1
