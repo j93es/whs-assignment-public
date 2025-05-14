@@ -1,0 +1,34 @@
+# playbook.yaml
+---
+- name: Run CIS benchmark
+  hosts: localhost
+  become: true
+  gather_facts: true
+
+  vars:
+    root_password: !vault |
+      $ANSIBLE_VAULT;1.1;AES256
+      30363031646463393431336333363765623361393230643838313934626234663531636635613834
+      3634396633613563633062393739666361666334353263390a323862373431636462396265363035
+      64356234316237626438313766633161616431346537343964666562623965656566383633666536
+      3033366530306435350a653734393264323931323663616231333961343038666137383866353231
+      6261
+    ubtu24cis_rule_6_1_1_1: false
+    ubtu24cis_rule_6_1_2_1_4: false
+    ubtu24cis_rule_6_2_2_4: false
+    ubtu24cis_rule_6_3_3: false
+
+  pre_tasks:
+    - name: Set root password
+      ansible.builtin.user:
+        name: root
+        password: "{{ root_password }}"
+
+    - name: Ensure /etc/default/grub exists
+      ansible.builtin.file:
+        path: /etc/default/grub
+        state: touch
+        mode: "0644"
+
+  roles:
+    - role: "{{ playbook_dir }}"
